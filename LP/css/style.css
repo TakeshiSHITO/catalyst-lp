@@ -464,7 +464,6 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 80px 20px;
-  background-color: #f8f8f8;
 }
 
 .point-main-title {
@@ -479,10 +478,10 @@ main {
 .point-main-title::after {
   content: '';
   display: block;
-  width: 80px;
+  width: 20vw;
   height: 3px;
   background-color: var(--gold);
-  margin: 16px auto 0;
+  margin: 10px auto 0;
 }
 
 .point-item {
@@ -516,13 +515,14 @@ main {
 
 .point-content {
   display: flex;
-  align-items: flex-start;
+  position: relative;
+  align-items: center;
   gap: 40px;
+  justify-content: center;
 }
 
 /* POINT 1 スタイル */
 .point-text {
-  flex: 1;
   color: #333;
 }
 
@@ -534,6 +534,11 @@ main {
 
 .point-visual {
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0 ;
+  margin-right: auto;
 }
 
 .japan-badge {
@@ -580,7 +585,7 @@ main {
 .ingredients-grid {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 10rem;
 }
 
 .nmn-pills {
@@ -588,13 +593,13 @@ main {
 }
 
 .nmn-pills .ingredient-image {
-  width: 120px;
+  width: 22vw;
   height: auto;
 }
 
 .plus-sign {
   position: absolute;
-  right: -20px;
+  right: -5rem;
   top: 50%;
   transform: translateY(-50%);
   font-size: 2rem;
@@ -605,45 +610,31 @@ main {
 .ingredients-right {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: 40px;
   flex: 1;
 }
 
 .ingredient-item {
-  display: flex;
   align-items: center;
   gap: 15px;
 }
+
 
 .ingredient-visual {
   flex-shrink: 0;
 }
 
 .ingredient-image {
-  width: 80px;
-  height: 80px;
+  width: 24vw;
+  height: auto;
   object-fit: contain;
-  border-radius: 12px;
+  border-radius: 50px;
 }
 
-.multi-vitamin .ingredient-image {
-  background-color: #FFD700;
-  padding: 10px;
-}
-
-.ceramide .ingredient-image {
-  background-color: #B0E0E6;
-  padding: 10px;
-}
-
-.maca .ingredient-image {
-  background-color: #DEB887;
-  padding: 10px;
-}
-
-.coenzyme .ingredient-image {
-  background-color: #FFE4E1;
-  padding: 10px;
+.ingredient-info{
+  padding-top:10px;
+  flex-direction: column;
+  text-align: left;
 }
 
 .ingredient-info h4 {
