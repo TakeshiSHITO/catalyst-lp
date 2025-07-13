@@ -94,33 +94,7 @@ main {
   height: auto;
   pointer-events: none;
 }
-.decor-left  { 
-  top: -8rem; 
-  left: -25em; 
-  rotate: 135deg;
-  width: 30vw;
-  transform: scaleX(-1);
-}
-@media screen and (max-width: 1440px){
-  .decor-left{
-  left:-10rem;
-  }
-}
 
-.decor-right { 
-  top: -12rem; 
-  right: -35rem; 
-  rotate: -100deg;
-  width: 40vw;
-  transform: scaleX(-1);
-}
-
-@media screen and (max-width: 1440px){
-  .decor-right{
-  right: -18rem
-  }
-  
-}
 
 .toplogo {
   position: flex;
@@ -626,15 +600,17 @@ z-index: 2;
   display: flex;
   align-items: center;
   background-color: #fff;
-  padding: 20px;
+  transform: scale(0.5);
+  padding: 15px;
   border-radius: 50px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 
 .point-visual .japan-map {
-  width: 15rem;
-  height: 15rem;
+  width: 8rem;
+  height: 8rem;
+  padding: 10px;
 }
 
 .japan-text {
@@ -645,26 +621,25 @@ z-index: 2;
 
 
 .made-in {
-  font-size: 0.8rem;
+  font-size: 1.0rem;
   color: #333;
   line-height: 1.2;
   text-align: center;
 }
 
 .nihon {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #333;
   font-weight: bold;
   margin-top: 4px;
 }
 
-@media screen {
-  .nihon{
-   font-size:1rem;
-  
+@media screen and (max-width: 480px) {
+  .nihon {
+    font-size: 1rem;
   }
-  
 }
+
 
 
 
@@ -1104,7 +1079,7 @@ position: relative;
   
   .point-content {
     flex-direction: column;
-    gap: 20px;
+    gap: 0px;
     align-items: center;
     text-align: center;
     
@@ -1132,14 +1107,10 @@ position: relative;
     height:auto
   }
   
-  .point-visual * {
-    transform: scale(0.5);
-  }
-  
   .japan-badge {
     padding: 18px;
-width:80vw;
-height: 30vw;
+    width: 80vw;
+    height: 30vw;
     align-self: center;
   }
   
@@ -1423,12 +1394,12 @@ height: 30vw;
   }
   
   .made-in {
-    font-size: 0.6rem;
+    font-size: 0.50rem;
     line-height: 1;
   }
   
   .nihon {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     margin-top: 0;
   }
 }
@@ -2180,31 +2151,7 @@ height: 30vw;
   text-align: center;
 }
 
-/* 装飾的な葉っぱ */
-.leaf-decoration {
-  position: relative;
-  width: 60vw;
-  height: auto;
-  pointer-events: none;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.leaf-image {
-  width: 100%;
-  height: auto;
-  max-width: 200px;
-}
-
-.leaf {
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  border-radius: 0 100% 0 100%;
-  opacity: 0.7;
-}
 
 
 
@@ -2283,14 +2230,7 @@ height: 30vw;
 
 /* レスポンシブ対応 */
 @media (max-width: 1024px) {
-  .leaf {
-    width: 100px;
-    height: 100px;
-  }
-  
-  .leaf-1, .leaf-4 { width: 80px; height: 80px; }
-  .leaf-2, .leaf-7 { width: 60px; height: 60px; }
-  .leaf-3, .leaf-5, .leaf-6 { width: 70px; height: 70px; }
+
   
   .company-name {
     font-size: 2rem;
@@ -2315,24 +2255,13 @@ height: 30vw;
     padding: 0 20px;
   }
   
-  .leaf {
-    width: 70px;
-    height: 70px;
-  }
-  
-  .leaf-1, .leaf-4 { width: 55px; height: 55px; }
-  .leaf-2, .leaf-7 { width: 40px; height: 40px; }
-  .leaf-3, .leaf-5, .leaf-6 { width: 45px; height: 45px; }
   
   .last-content {
     padding: 30px 0;
     gap: 25px;
   }
   
-  .leaf-decoration {
-    width: 120px;
-    height: 120px;
-  }
+  
   
   .seller-label {
     font-size: 1.1rem;
@@ -2365,23 +2294,9 @@ height: 30vw;
     padding: 0 15px;
   }
   
-  .leaf {
-    width: 50px;
-    height: 50px;
-  }
-  
-  .leaf-1, .leaf-4 { width: 40px; height: 40px; }
-  .leaf-2, .leaf-7 { width: 30px; height: 30px; }
-  .leaf-3, .leaf-5, .leaf-6 { width: 35px; height: 35px; }
-  
   .last-content {
     padding: 20px 0;
     gap: 20px;
-  }
-  
-  .leaf-decoration {
-    width: 70vw;
-    height: auto;
   }
   
   .seller-label {
